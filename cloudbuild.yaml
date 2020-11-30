@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'eu.gcr.io/nexum-general-project/python-template/immagine-docker-python-template:1.0', '.']
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'eu.gcr.io/nexum-general-project/python-template/immagine-docker-python-template:1.0']
